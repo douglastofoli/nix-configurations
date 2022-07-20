@@ -30,24 +30,24 @@ in
     ];
   };
 
-  laptop = lib.nixosSystem {                                # Laptop profile
-    inherit system;
-    specialArgs = { inherit inputs user location; };
-    modules = [
-      hyprland.nixosModules.default
-      ./laptop
-      ./configuration.nix
+  # laptop = lib.nixosSystem {                                # Laptop profile
+  #   inherit system;
+  #   specialArgs = { inherit inputs user location; };
+  #   modules = [
+  #     hyprland.nixosModules.default
+  #     ./laptop
+  #     ./configuration.nix
 
-      home-manager.nixosModules.home-manager {
-        home-manager.useGlobalPkgs = true;
-        home-manager.useUserPackages = true;
-        home-manager.extraSpecialArgs = { inherit user; };
-        home-manager.users.${user} = {
-          imports = [(import ./home.nix)] ++ [(import ./laptop/home.nix)];
-        };
-      }
-    ];
-  };
+  #     home-manager.nixosModules.home-manager {
+  #       home-manager.useGlobalPkgs = true;
+  #       home-manager.useUserPackages = true;
+  #       home-manager.extraSpecialArgs = { inherit user; };
+  #       home-manager.users.${user} = {
+  #         imports = [(import ./home.nix)] ++ [(import ./laptop/home.nix)];
+  #       };
+  #     }
+  #   ];
+  # };
 
   vm = lib.nixosSystem {                                    # VM profile
     inherit system;

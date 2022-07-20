@@ -11,13 +11,9 @@
 #
 
 [
-  ./dunst.nix
   ./flameshot.nix
   ./picom.nix
-  ./polybar.nix
-  ./sxhkd.nix
-  ./udiskie.nix
-  ./redshift.nix
+  ./pipewire.nix
 ]
 
 # Media is pulled from desktop default config

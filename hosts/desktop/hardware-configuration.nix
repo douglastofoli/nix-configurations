@@ -49,6 +49,6 @@
 
     networkmanager.enable = false;
 
-    networking.resolvconf.dnsExtensionMechanism = false;
+    resolvconf.dnsExtensionMechanism = false;
   };
 }
