@@ -16,24 +16,13 @@
 {
   imports =
     [
-      ../../modules/desktop/bspwm/home.nix  # Window Manager
-      ../../modules/desktop/sway/home.nix
-      #../../modules/desktop/hyprland/home.nix
+      ../../modules/desktop/xmonad  # Window Manager
     ];
 
   home = {                                # Specific packages for desktop
     packages = with pkgs; [
       # Applications
-      darktable         # Raw Image Processing
-      gimp              # Graphical Editor
-      inkscape          # Vector Graphical Editor
-      kdenlive          # Video Editor
-      libreoffice       # Office Packages
-      plex-media-player # Media Player
-      shotcut           # Video Editor
-
-      # Dependencies
-      gmtp              # Used for mounting gopro
+      gimp
       
       # Imported in default config
       #bazarr           # Subtitles
