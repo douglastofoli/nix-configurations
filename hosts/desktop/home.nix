@@ -16,7 +16,7 @@
 {
   imports =
     [
-      ../../modules/desktop/xmonad  # Window Manager
+      ../../modules/desktop/xmonad/home.nix  # Window Manager
     ];
 
   home = {                                # Specific packages for desktop
