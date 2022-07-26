@@ -11,6 +11,7 @@
 #
 
 [
+  ./dunst.nix
   ./flameshot.nix
   ./picom.nix
   ./pipewire.nix
