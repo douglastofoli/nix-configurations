@@ -36,8 +36,5 @@
       "80:class_i *= 'Alacritty'"
       "100:fullscreen"
     ];                                            # Find with $ xprop | grep "WM_CLASS"
-
-    extraOptions = ''
-    '';                                           # Extra options for picom.conf (mostly for pijulius fork)
   };
 }
