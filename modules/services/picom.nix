@@ -27,7 +27,7 @@
     shadowOpacity = "0.75";
     fade = true;                                  # Fade
     fadeDelta = 10;
-    opacityRule = [                               # Opacity rules if transparency is prefered
+    opacityRules = [                               # Opacity rules if transparency is prefered
       "100:name = 'Picture in picture'"
       "100:name = 'Picture-in-Picture'"
       "85:class_i ?= 'rofi'"
