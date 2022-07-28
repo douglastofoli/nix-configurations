@@ -5,13 +5,9 @@
     enable = true;
     package = pkgs.picom.overrideAttrs(o: {
       src = pkgs.fetchFromGitHub {
-        #repo = "picom";
-        #owner = "pijulius";
-        #rev = "982bb43e5d4116f1a37a0bde01c9bda0b88705b9";
-        #sha256 = "YiuLScDV9UfgI1MiYRtjgRkJ0VuA1TExATA2nJSJMhM=";
         repo = "picom";
         owner = "ibhagwan";
-        #rev = "e3c19cd7d1108d114552267f302548c113278d45";
+        rev = "c4107bb6cc17773fdc6c48bb2e475ef957513c7a";
         sha256 = "4voCAYd0fzJHQjJo4x3RoWz5l3JJbRvgIXn1Kg6nz6Y=";
       };
     });                                           # Override picom to use pijulius' version
