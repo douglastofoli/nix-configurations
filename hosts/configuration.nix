@@ -4,6 +4,7 @@
   imports =                                 # Import window or display manager.
     [
      # ../modules/editors/emacs              # ! Comment this out on first install !
+      ../modules/services/picom.nix
     ];
 
   users.users.${user} = {                   # System User
