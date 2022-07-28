@@ -13,7 +13,7 @@
 [
   ./dunst.nix
   ./flameshot.nix
-  ./picom.nix
+  # ./picom.nix
   ./pipewire.nix
 ]
 

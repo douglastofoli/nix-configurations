@@ -21,11 +21,4 @@
       '';
     };
   };
-  
-  environment.systemPackages = with pkgs; [
-    #emacs
-    ripgrep
-    coreutils
-    fd
-  ];
 }

@@ -42,11 +42,12 @@
     };
   };
 
-  environment = {                               # Packages installed system wide
-    systemPackages = with pkgs; [               # This is because some options need to be configured.
-      discord
-    ];
-  };
+  environment.systemPackages = with pkgs; [
+    discord
+    ripgrep
+    coreutils
+    fd
+  ];
 
   nixpkgs.overlays = [                          # This overlay will pull the latest version of Discord
     (self: super: {
